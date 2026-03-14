@@ -2,6 +2,9 @@
 
 Automatic updater for Minecraft Bedrock Dedicated Server.
 
+![Release](https://img.shields.io/github/v/release/USERNAME/BDS-Updater)
+![Downloads](https://img.shields.io/github/downloads/USERNAME/BDS-Updater/total)
+
 ## Features
 
 * GUI updater
