@@ -1,2 +1,60 @@
-# BDS-Updater
-マイクラ統合版サーバーのBDS用のサーバーアップデーターです。面倒な作業を効率化します。
+# BDS Updater
+
+Automatic updater for Minecraft Bedrock Dedicated Server.
+
+## Features
+
+* GUI updater
+* Update check
+* Download progress bar
+* Server stop → update → restart
+* Player notification before restart
+* Exclude files/folders from overwrite
+* Custom exclude support
+* Console viewer
+* Command sender
+
+## Default excluded files
+
+```
+behavior_packs
+resource_packs
+worlds
+config
+allowlist.json
+permissions.json
+server.properties
+```
+
+## How to use
+
+1. Download `BDSUpdater.exe`
+2. Select your Bedrock server folder
+3. Click **Start Server**
+4. Click **Check Update**
+5. Click **Update Server**
+
+## Build from source
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Run:
+
+```
+python src/bds_updater.py
+```
+
+Build exe:
+
+```
+pip install pyinstaller
+pyinstaller --onefile --windowed src/bds_updater.py
+```
+
+## License
+
+MIT
